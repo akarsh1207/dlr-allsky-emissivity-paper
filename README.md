@@ -1,26 +1,25 @@
-# DLR All-Sky Emissivity Paper Scripts
+# All-Sky DLR Estimation Scripts
 
-Repository for scripts and manuscript assets supporting the paper:
+Reader-facing code repository for the paper:
 "Estimation of Longwave All-sky Emissivity using Shortwave and Meteorological Measurements".
 
-## Contents
+## What Is Included
 
-- `zenodo_dataset_package_v1/`: Zenodo-ready data package scaffold (metadata, docs, helper scripts)
-- `Written Content/dlr_estimation.py`: reference implementation for DLR estimation workflow
-- `Helper Original code/`: source analysis and plotting scripts used during model development
-- `Final_Draft_Working_Version/`: manuscript draft and bibliography files
+- `Helper Original code/`: model fitting, validation, and plotting scripts
+- `Written Content/dlr_estimation.py`: reference DLR estimation implementation
+- `density_plot.ipynb`, `final_plot.ipynb`: notebook workflows used for figure generation and analysis
 
-## Data
+## What Is Not Included
 
-Large dataset binaries are intentionally excluded from this repository.
-The HDF5 dataset is published via Zenodo (embargo/public release per journal timeline).
+- Large raw/processed data binaries (`.h5`) are not stored in this repository.
+- Dataset access is provided via Zenodo (DOI to be added in manuscript and release notes).
 
-## Reproducibility
+## Quick Start
 
-1. Create and activate Python environment
-2. Install dependencies used by your selected scripts
-3. Run scripts from `Helper Original code/` or `Written Content/dlr_estimation.py`
+1. Create a Python environment
+2. Install dependencies from `requirements.txt`
+3. Run scripts in `Helper Original code/` or use the notebooks
 
-## License
+## Citation
 
-License to be finalized before public release.
+If you use this code, please cite the associated paper and the Zenodo dataset record.

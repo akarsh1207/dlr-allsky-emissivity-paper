@@ -38,3 +38,9 @@ intermediate_plots/
 # Editor
 .vscode/
 *.code-workspace
+
+# Manuscript-only assets (keep local)
+Final_Draft_Working_Version/
+Written Content/*.pdf
+Written Content/*.tex
+Written Content/paper_pic/
