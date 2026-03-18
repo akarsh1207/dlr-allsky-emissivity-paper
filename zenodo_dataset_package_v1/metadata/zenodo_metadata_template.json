@@ -1,0 +1,56 @@
+{
+  "title": "Estimation of Longwave All-sky Emissivity using Shortwave and Meteorological Measurements: SURFRAD Dataset (2010-2023)",
+  "upload_type": "dataset",
+  "description": "This dataset contains station-wise HDF5 tables used for all-sky atmospheric emissivity and downwelling longwave radiation (DLR) modeling based on shortwave and meteorological observations. The release includes seven NOAA SURFRAD stations (BON, DRA, FPK, GWN, PSU, SXF, TBL) with 25,490,369 total observations and 51 variables per station table, including measured radiative fluxes, meteorological variables, quality-control flags, and clear-sky irradiance estimates. The HDF5 file uses one top-level group per station with a datetime-like index and tabular records at one-minute cadence. This release supports reproducible calibration and validation workflows for all-sky emissivity and DLR estimation and includes documentation plus validation/loading support scripts.",
+  "creators": [
+    {
+      "name": "Srivastava, Akarsh",
+      "affiliation": "Department of Mechanical and Aerospace Engineering, University of California San Diego",
+      "orcid": ""
+    },
+    {
+      "name": "Wang, Jiedong",
+      "affiliation": "Department of Mechanical and Aerospace Engineering, University of California San Diego",
+      "orcid": ""
+    },
+    {
+      "name": "Huang, Zoey",
+      "affiliation": "Department of Mechanical and Aerospace Engineering, University of California San Diego",
+      "orcid": ""
+    },
+    {
+      "name": "Briggs, Clayson",
+      "affiliation": "Department of Mechanical and Aerospace Engineering, University of California San Diego",
+      "orcid": ""
+    },
+    {
+      "name": "Coimbra, Carlos F. M.",
+      "affiliation": "Department of Mechanical and Aerospace Engineering, University of California San Diego",
+      "orcid": ""
+    }
+  ],
+  "access_right": "embargoed",
+  "embargo_date": "2026-07-31",
+  "license": "cc-by-4.0",
+  "keywords": [
+    "downwelling longwave radiation",
+    "atmospheric emissivity",
+    "SURFRAD",
+    "surface radiation budget",
+    "all-sky parameterization",
+    "HDF5"
+  ],
+  "notes": "Embargoed during peer review. Access for editors/reviewers can be provided via Zenodo private link.",
+  "version": "v1.0",
+  "language": "eng",
+  "communities": [],
+  "related_identifiers": [],
+  "contributors": [
+    {
+      "name": "Coimbra, Carlos F. M.",
+      "type": "ContactPerson",
+      "affiliation": "Department of Mechanical and Aerospace Engineering, University of California San Diego"
+    }
+  ],
+  "grants": []
+}

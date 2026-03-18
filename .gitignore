@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
+
+# Data and large binaries
+*.h5
+*.hdf5
+*.nc
+*.parquet
+
+# Build/intermediate outputs
+final_plots/
+intermediate_plots/
+
+# LaTeX aux/build files
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.run.xml
+*.spl
+*.synctex.gz
+*.toc
+
+# Editor
+.vscode/
+*.code-workspace
