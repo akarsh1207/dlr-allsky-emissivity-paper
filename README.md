@@ -3,22 +3,42 @@
 Reader-facing code repository for the paper:
 "Estimation of Longwave All-sky Emissivity using Shortwave and Meteorological Measurements".
 
-## What Is Included
+## Repository Layout
 
-- `Helper Original code/`: model fitting, validation, and plotting scripts
-- `Written Content/dlr_estimation.py`: reference DLR estimation implementation
-- `density_plot.ipynb`, `final_plot.ipynb`: notebook workflows used for figure generation and analysis
+- `scripts/run_pipeline.py`: central runner for reproducible filtering, metrics, and plotting
+- `scripts/legacy/`: original research scripts used during model development
+- `src/dlr/`: reusable DLR estimation module
+- `notebooks/`: analysis notebooks
+- `outputs/plots/`: default destination for generated plots and metric CSV files
 
-## What Is Not Included
+## Input Data
 
-- Large raw/processed data binaries (`.h5`) are not stored in this repository.
-- Dataset access is provided via Zenodo (DOI to be added in manuscript and release notes).
+Place or reference your SURFRAD HDF5 file (for example `output.h5`) locally.
+Large data files are intentionally not versioned in this repository.
 
 ## Quick Start
 
-1. Create a Python environment
-2. Install dependencies from `requirements.txt`
-3. Run scripts in `Helper Original code/` or use the notebooks
+1. Create and activate a Python environment.
+2. Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+3. Run the central pipeline:
+
+```bash
+python scripts/run_pipeline.py --h5 /path/to/output.h5 --output outputs/plots
+```
+
+## Pipeline Outputs
+
+The central runner writes the following by default:
+
+- `outputs/plots/kd_vs_gamma_hexbin.png`
+- `outputs/plots/observed_vs_predicted_emissivity.png`
+- `outputs/plots/emissivity_metrics_by_station.csv`
+- `outputs/plots/emissivity_metrics_overall.csv`
 
 ## Citation
 

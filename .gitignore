@@ -20,6 +20,8 @@ __pycache__/
 # Build/intermediate outputs
 final_plots/
 intermediate_plots/
+outputs/plots/*
+!outputs/plots/.gitkeep
 
 # LaTeX aux/build files
 *.aux
@@ -44,3 +46,4 @@ Final_Draft_Working_Version/
 Written Content/*.pdf
 Written Content/*.tex
 Written Content/paper_pic/
+Written Content/dlr_estimation.py
